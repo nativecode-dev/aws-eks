@@ -1,7 +1,7 @@
 # Variables Configuration
 
 variable "cluster-name" {
-  default     = "eks-demo"
+  default     = "production"
   type        = "string"
   description = "The name of your EKS Cluster"
 }
@@ -31,25 +31,25 @@ variable "vpc-private-cidrs" {
 }
 
 variable "instance-type" {
-  default     = "m4.large"
+  default     = "t2.small"
   type        = "string"
   description = "Worker Node EC2 instance type"
 }
 
 variable "asg-desired" {
-  default     = 1
+  default     = 3
   type        = "string"
   description = "Autoscaling Desired node capacity"
 }
 
 variable "asg-max" {
-  default     = 1
+  default     = 3
   type        = "string"
   description = "Autoscaling maximum node capacity"
 }
 
 variable "asg-min" {
-  default     = 1
+  default     = 3
   type        = "string"
   description = "Autoscaling Minimum node capacity"
 }

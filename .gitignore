@@ -1,0 +1,6 @@
+terraform-eks/.terraform
+terraform-eks/.terraform.tfstate.*
+terraform-eks/config-map-aws-auth.yaml
+terraform-eks/modules
+terraform-eks/production
+terraform-eks/terraform.tfstate*
